@@ -1,0 +1,230 @@
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 0.9rem;
+  color: #333;
+  padding: 0;
+  margin: 0;
+}
+
+#logo {
+  align-content: center;
+}
+
+#logo img {
+  overflow: auto;
+}
+
+#header h1,
+h6 {
+  float: left;
+  font-size: 2.0rem;
+  font-weight: 700;
+  line-height: 2.0rem;
+  letter-spacing: 0.05rem;
+  margin-top: 5px;
+  margin-left: 10px;
+  margin-bottom: 0;
+  text-align: center;
+  color: #fff;
+}
+
+h6 {
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: 600;
+  line-height: 1rem;
+  letter-spacing: 0.03rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0;
+  padding: 0;
+}
+
+p {
+  margin-top: 0.5rem;
+  margin-bottom: 0.8rem;
+  text-transform: capitalize;
+  font-weight: bold;
+}
+
+p.title p.name {
+  padding-top: 15px;
+  padding-bottom: 0px;
+}
+
+.info {
+  padding-top: 0.5rem;
+  padding-bottom: 0rem;
+  padding-left: 1.0rem;
+}
+
+.progress {
+  height: 2rem;
+  overflow: hidden;
+  font-size: 1.25rem;
+  background-color: #d0d0d0;
+  border-radius: 10;
+  margin-bottom: 0.5rem;
+}
+
+#header {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #3d74aa;
+  padding: 6px;
+}
+
+#map-col {
+  background-color: #e5e5e5;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+#map-info-col {
+  background-color: #F2f9ff;
+  overflow-x: hidden;
+  overflow-y: auto;
+  border-top: 1px solid #9aa9b3;
+  border-right: 3px solid #9aa9b3;
+  border-bottom: 1px solid #9aa9b3;
+  border-left: none;
+  margin-bottom: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+#map {
+  position: relative;
+  border: 1px solid #9aa9b3;
+  margin: 0 0 1rem 0;
+  padding: 0;
+}
+
+.btn {
+  display: inline-block;
+  font-weight: 400;
+  color: #212529;
+  text-align: center;
+  vertical-align: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-color: transparent;
+  border: 1px solid;
+  padding: .375rem .75rem;
+  font-size: 1rem;
+  line-height: 1.25;
+  border-radius: .25rem;
+  transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+.counties:hover {
+  fill: rgba(255, 255, 0, 0.555);
+}
+
+.pad-left-col {
+  padding: 0;
+  margin: 2rem 0 1.3rem 2rem;
+}
+
+.pad-right-col {
+  padding: 0;
+  margin: 2rem 2rem 1.3rem -1px;
+}
+
+.right-border {
+  border-right: 1px solid #ffc8ba;
+  padding-right: 1rem;
+}
+
+.left-border {
+  border-left: 1px solid #ffc8ba;
+  padding-left: 1.0rem;
+}
+
+.center-col {
+  margin: 0 auto;
+}
+
+#dropdown {
+  padding-top: 10px;
+  padding-right: 5px;
+  padding-bottom: 15px;
+  padding-left: 30px;
+}
+
+.wrapper1 {
+  padding-right: 5px;
+  padding-bottom: 12px;
+  padding-left: 12px;
+}
+
+.wrapper2 {
+  padding-top: 5px;
+  padding-right: 5px;
+  padding-bottom: 5px;
+  padding-left: 12px;
+}
+
+.my-legend {
+  /* padding: 20px 300px 20px 20px; */
+  right: 0;
+  /* position: fixed; */
+  top: 475px;
+  /* background-color: #333; */
+  /* color: #fff; */
+  border-radius: 20px;
+}
+
+.my-legend {
+  background-color: #fff;
+  padding: 20px;
+}
+
+.my-legend .legend-title {
+  text-align: left;
+  margin-bottom: 5px;
+  font-weight: bold;
+  font-size: 90%;
+}
+
+.my-legend .legend-scale ul {
+  margin: 0;
+  margin-bottom: 5px;
+  padding: 0;
+  float: left;
+  list-style: none;
+}
+
+.my-legend .legend-scale ul li {
+  font-size: 80%;
+  list-style: none;
+  margin-left: 0;
+  line-height: 18px;
+  margin-bottom: 2px;
+}
+
+.my-legend ul.legend-labels li span {
+  display: block;
+  float: left;
+  height: 16px;
+  width: 30px;
+  margin-right: 5px;
+  margin-left: 0;
+  border: 1px solid #999;
+}
+
+.my-legend .legend-source {
+  font-size: 70%;
+  color: #999;
+  clear: both;
+}
+
+.my-legend a {
+  color: #777;
+}
+
+.page-footer {
+  background-color: #3d74aa;
+  color: #fff;
+}

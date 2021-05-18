@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title>Median Income Explorer in Ohio Counties 2017</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+        integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous" />
+    <link href='css/style.css' rel='stylesheet' />
+</head>
+
+<body>
+    <div id='container-fluid'>
+
+        <!-- header -->
+        <div id='header' class='row no-gutters'>
+            <div class='col-1' id='logo'>
+                <img src='images/logo.png' style='height: 70px;'>
+            </div>
+            <div class='col-11' id='title-bar'>
+                <h1>Median Household Income in Ohio Counties by Race: 2017</h1>
+                <h6>Source: U.S. Census Bureau, American Community Survey 5-year estimates </h6>
+            </div>
+        </div>
+    </div>
+
+    <div id='map-app' class='row no-gutters'>
+
+        <!-- map -->
+        <div id='map-col' class='col-7'>
+            <div id='map'></div>
+        </div>
+
+        <!-- info -->
+        <div id='map-info-col' class='col-5'>
+            <div id='instruction' class='col-12'>
+                <p>These are the Race/Ethnic groups identified by the US Census. </p>
+            </div>
+            <!-- select -->
+            <div id="dropdown" class='col-12'>
+                <select id="race" class="selectpicker" name="race">
+                    <option value="HH_TOTAL">Total</option>
+                    <option value="HH_WHITE">White</option>
+                    <option value="HH_BLACK">Black</option>
+                    <option value="HH_HISPANIC">Hispanic</option>
+                    <option value="HH_NATIVE">Native American or Indian</option>
+                    <option value="HH_ASIAN">East or South Asian</option>
+                    <option value="HH_PACIFIC">Pacific Islander</option>
+                    <option value="HH_OTHER">Other</option>
+                    <option value="HH_TWOPLUS">Two or more races</option>
+                </select>
+            </div>
+            <hr />
+
+            <div class='row info'>
+                <div id='instruction1' class='col-12'>
+                    <div class='instruction'>2. Select an ethnic group from the dropdown menu above. </div>
+                </div>
+            </div>
+
+            <!-- state label -->
+            <div class='wrapper1'>
+                <p class="title">Ohio Statewide Average Median Income for Selected Ethnic Group</p>
+                <!-- state bar -->
+                <div class="col-12">
+                    <div class="progress">
+                        <div class="progress-bar bar0" role="progressbar" style="width: 50%; background-color: green;"
+                            aria-valuenow="0%" aria-valuemin="0%" aria-valuemax="100%"></div>
+                    </div>
+                </div>
+            </div>
+            <hr />
+
+
+            <div class='wrapper2'>
+                <div class='instruction1' class='col-12'>
+                    <div class=instruction>3. Now select a county on the map. </div>
+                </div>
+
+                <!-- county label -->
+
+                <p class="name">Selected County Median Income for Selected Ethnic Group</p>
+
+
+                <!-- county bar -->
+                <div class="col-12">
+                    <div class="progress">
+                        <div class="progress-bar bar1" role="progressbar" style="width: 0%; background-color: green;"
+                            aria-valuenow="0%" aria-valuemin="0%" aria-valuemax="100%"></div>
+                    </div>
+                </div>
+            </div>
+            <hr />
+            <!-- legend -->
+            <div class="col-12">
+                <div id='legendbox'>
+                    <div class='my-legend'>
+                        <div class='legend-title'>Median Income by Selected Ethnic Group</div>
+                        <div class='legend-scale'>
+                            <ul class='legend-labels'>
+                                <li><span style='background:#696969;'></span>Population not represented</li>
+                                <li><span style='background:#d9f0a3;'></span>Less than $20,000</li>
+                                <li><span style='background:#addd8e;'></span>Between $20,000 and $40,000</li>
+                                <li><span style='background:#78c679;'></span>Between $40,000 and $90,000</li>
+                                <li><span style='background:#37a354;'></span>Between $90,000 and $140,000</li>
+                                <li><span style='background:#006837;'></span>Greater than $140,000</li>
+                            </ul>
+                        </div>
+                        <div class='legend-source'>Source: <a href="http://factfinder.census.gov">U.S. Census
+                                Bureau</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    </div>
+    </div>
+
+    </div>
+    </div>
+    </div>
+
+    </div>
+    <!-- Footer -->
+    <footer class="page-footer font-small blue pt-5">
+
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3">© 2019 Copyright:
+            Wesley Ratko, AICP
+        </div>
+        <!-- Copyright -->
+
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <!--  d3, topojson -->
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <script src="https://d3js.org/topojson.v2.min.js"></script>
+    <!-- Bootstrap Select files here.  -->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.9/dist/css/bootstrap-select.min.css">
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.9/dist/js/bootstrap-select.min.js"></script>
+    <!--  ohio map and census data files-->
+    <script src="js/ohio-counties.js"></script>
+    <!-- Source: https://github.com/deldersveld/topojson/blob/master/countries/us-states/OH-39-ohio-counties.json-->
+    <script src="js/incomes.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>

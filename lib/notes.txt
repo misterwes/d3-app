@@ -1,0 +1,28 @@
+These are the categories: 
+
+Households
+Households - One race-- - White
+Households - One race-- - Black or African American
+Households - One race-- - American Indian and Alaska Native
+Households - One race-- - Asian
+Households - One race-- - Native Hawaiian and Other Pacific Islander
+Households - One race-- - Some other race
+Households - Two or more races
+Hispanic or Latino origin (of any race)
+
+HOUSEHOLD INCOME BY AGE OF HOUSEHOLDER - 15 to 24 years
+HOUSEHOLD INCOME BY AGE OF HOUSEHOLDER - 25 to 44 years
+HOUSEHOLD INCOME BY AGE OF HOUSEHOLDER - 45 to 64 years
+HOUSEHOLD INCOME BY AGE OF HOUSEHOLDER - 65 years and over
+
+FAMILY INCOME BY FAMILY SIZE - 2-person families
+FAMILY INCOME BY FAMILY SIZE - 3-person families
+FAMILY INCOME BY FAMILY SIZE - 4-person families
+FAMILY INCOME BY FAMILY SIZE - 5-person families
+FAMILY INCOME BY FAMILY SIZE - 6-person families
+FAMILY INCOME BY FAMILY SIZE - 7-or-more person families
+
+FAMILY INCOME BY NUMBER OF EARNERS - No earners
+FAMILY INCOME BY NUMBER OF EARNERS - 1 earner
+FAMILY INCOME BY NUMBER OF EARNERS - 2 earners
+FAMILY INCOME BY NUMBER OF EARNERS - 3 or more earners
